@@ -1,10 +1,13 @@
 from django.contrib import admin
-from orders.models import  Order
+from orders.models import Order
 
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    pass
-    # list_display = ('rating', 'comment', 'tour')
-    # search_fields = ['rating', 'comment', 'tour__title']
-    # prepopulated_fields = {'slug': ('rating', 'comment')}
+    list_display = ['email', 'status', 'booking_reference', 'event_day', 'tour']
+    list_select_related = (
+        'tour',
+    )
+    search_fields = ['email', 'status', 'booking_reference', 'event_day']
+    list_filter = ['email', 'status',  'event_day']
+
