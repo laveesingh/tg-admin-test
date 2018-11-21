@@ -4,5 +4,5 @@ media
 *.pyc
 .idea/*
 .venv/*
-*dev_settings.*
+hawai/dev_settings.py
 static/*
