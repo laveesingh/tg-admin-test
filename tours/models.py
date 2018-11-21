@@ -1,6 +1,6 @@
 from django.db import models
 
-CHAR_FIELD_MAX_LENGTH = 300
+CHAR_FIELD_MAX_LENGTH = 250
 
 class Tour(models.Model):
     title = models.CharField(max_length=CHAR_FIELD_MAX_LENGTH, default='')
