@@ -117,6 +117,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'static')
+
 JET_SIDE_MENU_ITEMS = [
     {'app_label': 'coupons', 'items': [
         {'name': 'coupon'},
