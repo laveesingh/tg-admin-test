@@ -4,3 +4,4 @@ media
 *.pyc
 .idea/*
 .venv/*
+*dev_settings.*
