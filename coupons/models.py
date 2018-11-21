@@ -1,7 +1,7 @@
 from django.db import models
 from orders.models import Order
 
-CHAR_FIELD_MAX_LENGTH = 300
+CHAR_FIELD_MAX_LENGTH = 250
 
 
 class Coupon(models.Model):

@@ -2,7 +2,7 @@ from django.db import models
 from tours.models import Tour
 
 
-CHAR_FIELD_MAX_LENGTH = 300
+CHAR_FIELD_MAX_LENGTH = 250
 
 
 class Order(models.Model):
