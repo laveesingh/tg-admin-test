@@ -2,4 +2,5 @@
 db.sqlite3
 media
 *.pyc
-.dev_settings
+.idea/*
+.venv/*

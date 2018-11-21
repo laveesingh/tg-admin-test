@@ -116,3 +116,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+JET_SIDE_MENU_ITEMS = [
+    {'app_label': 'coupons', 'items': [
+        {'name': 'coupon'},
+    ]},
+    {'app_label': 'orders', 'items': [
+        {'name': 'order'},
+    ]},
+    {'app_label': 'reviews', 'items': [
+        {'name': 'review'},
+    ]},
+    {'app_label': 'tours', 'items': [
+        {'name': 'tour'},
+    ]},
+]
+
+JET_SIDE_MENU_COMPACT = True
