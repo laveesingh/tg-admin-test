@@ -22,7 +22,7 @@ def generate_order():
     random_tour = random.choice(all_tours)
     email = fake.profile()['mail']
     booking_reference = fake.word().upper()
-    event_day = fake.date_this_year(before_today=False, after_today=True)
+    event_day = fake.date_this_year()
     people = random.randint(1, 10)
     status = random.choice(['c', 'p', 'o'])
     order = Order(

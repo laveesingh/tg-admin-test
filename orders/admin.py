@@ -10,4 +10,3 @@ class OrderAdmin(admin.ModelAdmin):
     )
     search_fields = ['email', 'status', 'booking_reference', 'event_day']
     list_filter = ['email', 'status',  'event_day']
-

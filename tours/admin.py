@@ -7,4 +7,4 @@ class TourAdmin(admin.ModelAdmin):
     list_display = ('title', 'url',)
     search_fields = ['title', 'url']
     list_filter = ['title']
-
+    prepopulated_fields = {'url': ('title', )}
